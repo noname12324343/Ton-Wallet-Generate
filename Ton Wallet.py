@@ -2,6 +2,7 @@ from tonsdk.contract.wallet import WalletVersionEnum, Wallets
 from tonsdk.utils import bytes_to_b64str
 from tonsdk.crypto import mnemonic_new
 from colorama import init, Fore, Back, Style
+import webbrowser
 
 init()
 
@@ -9,6 +10,7 @@ print(Fore.GREEN + """                      Bản quyền thuộc về https://t
             Ngoài ra mình bán tool check live Twitter (X), Tool đọc mail,
                             ae nào cần có thể ủng hộ mình :3""" + Style.RESET_ALL)
 
+webbrowser.open('https://youtu.be/eYEZZ5huOBo') 
 wallet_workchain = 0
 wallet_version = WalletVersionEnum.v3r2
 f = open('Ton Wallet.txt','a')
